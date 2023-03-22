@@ -32,7 +32,7 @@ export  default function Home(){
         <Fragment>
             {loading ? <Loader/>:
                 <Fragment>
-                    <MetaData title={'Buy Best Products'} />
+                    <MetaData title={'AKF'} />
                     <h1 id="products_heading">Latest Products</h1>
                     <section id="products" className="container mt-5">
                         <div className="row">

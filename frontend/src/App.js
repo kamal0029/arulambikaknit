@@ -38,6 +38,8 @@ import UpdateOrder from './components/admin/UpdateOrder';
 import UserList from './components/admin/UserList';
 import UpdateUser from './components/admin/UpdateUser';
 import ReviewList from './components/admin/ReviewList';
+import Top1 from './components/layouts/top';
+import Down1 from './components/layouts/down';
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("")
@@ -54,7 +56,10 @@ function App() {
     <Router>
       <div className="App">
         <HelmetProvider>
+          <Top1/>
+          
             <Header/>
+            <Down1/>
                 <div className='container container-fluid'>
                   <ToastContainer theme='dark' />
                   <Routes>

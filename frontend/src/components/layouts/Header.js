@@ -2,9 +2,11 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Search from './Search';
 import {useDispatch, useSelector} from 'react-redux';
-import {DropdownButton, Dropdown, Image} from 'react-bootstrap';
+import {Dropdown, Image} from 'react-bootstrap';
 import { logout } from '../../actions/userActions';
+
 export default function Header () {
+
     const { isAuthenticated, user } = useSelector(state => state.authState);
     const { items:cartItems } = useSelector(state => state.cartState)
     const dispatch = useDispatch();
@@ -13,11 +15,11 @@ export default function Header () {
       dispatch(logout);
     }
     return (
-    <nav className="navbar row">
+    <nav className="navbar navbar-dark bg-dark">
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to="/">
-              <img width="150px" alt='JVLcart Logo' src="/images/logo.png" />
+              <img width="150px" alt='AKF LOGO' src="/images/logo.png" />
             </Link>
             </div>
         </div>
