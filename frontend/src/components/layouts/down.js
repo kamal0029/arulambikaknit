@@ -7,7 +7,8 @@ export default function Down1() {
 
                 
 
-                    <div className='navbask'>FREE SHIPPING For Orders Above Rs.1000/-</div>
+                    <div className='navbask'>
+                            <b>FREE SHIPPING</b> for Orders Above Rs.1000/-</div>
                     
                 
             </div>

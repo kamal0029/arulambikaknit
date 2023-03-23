@@ -130,7 +130,7 @@ export  default function NewProduct () {
                             <div className="form-group">
                                 <label htmlFor="description_field">Description</label>
                                 <textarea 
-                                    className="form-control"
+                                    className="form-control"                    
                                     id="description_field" 
                                     rows="8"
                                     onChange={e => setDescription(e.target.value)}
